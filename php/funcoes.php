@@ -6,6 +6,9 @@
         private int $num1;
         private int $num2;
         private int $resultado;
+        private int $a;
+        private int $b;
+        private int $c;
 
         public function __construct()
         {
@@ -34,28 +37,32 @@
         public function somar()
         {
             $this-> resultado = $this->num1 + $this->num2;
+            return "<br>A soma do $this->num1 e do $this->num2 é: $this->resultado<br> ";
         }//fim do somar
 
           public function subtrair()
         {
             $this-> resultado = $this->num1 - $this->num2;
+             return "<br>A subtração do $this->num1 e do $this->num2 é: $this->resultado<br> ";
         }//fim do subtrair
 
           public function multiplicar()
         {
             $this-> resultado = $this->num1 * $this->num2;
+             return "<br>A multiplicação do $this->num1 e do $this->num2 é: $this->resultado<br> ";
         }//fim do multiplicar
 
         public function dividir()
         { 
-            if ($string->num2 <= 0)
+            if ($this->num2 <= 0)
             {
-                $this->resultado = "Impossível dividir por zero";
+               return "Impossivel dividir por zero!";
             }
             else
             {
                 $this-> resultado = $this->num1 / $this->num2;
-            }
+            }   
+             return "<br>A divisão do $this->num1 e do $this->num2 é: $this->resultado<br> ";
         }//fim do divisão
 
         
