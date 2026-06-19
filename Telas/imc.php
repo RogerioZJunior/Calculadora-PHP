@@ -10,40 +10,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bascara</title>
+    <title>IMC</title>
 </head>
 <body>
        <form method="POST" style="text-align:center;margin:10%; padding:5%; background-color:#bb0b0b;"> 
-            <h1>Bascara</h1>  
+            <h1>IMC</h1>  
 
                             <!-- area do texto -->
             <div class="mb-3">
-                <label for="lPrimeiroNumero" class="form-label">Informe o Primeiro Número:</label>
-                <input type="number" class="form-control" id="primeiroNumero" name="primeiroNumero">
+                <label for="lPeso" class="form-label">Informe o Peso:</label>
+                <input type="text" class="form-control" id="peso" name="peso">
             </div>
 
             <div class="mb-3">
-                <label for="lSegundoNumero" class="form-label">Informe o Segundo Número:</label>
-                <input type="number" class="form-control" id="segundoNumero" name="segundoNumero">
+                <label for="lAltura" class="form-label">Informe a Altura:</label>
+                <input type="text" class="form-control" id="altura" name="altura">
             </div>
                             <!-- area do texto -->
                             <!-- botãos -->
-            <button type="submit" class="btn btn-primary">Bascara
+            <button type="submit" class="btn btn-primary">Calcular
                 <?php 
-                    if(ifsset($_POST['primeiroNumero']) || isset($_POST['segundoNumero']))
+                    if(isset($_POST['peso']) || isset($_POST['altura']))
                     {
-                        $num1 = $_POST['primeiroNumero'];
-                        $num2 = $_POST['segundoNumero'];
+                        $peso   = (float)$_POST['peso'];
+                        $altura = (float)$_POST['altura'];
                         //chamar variavel da classe funcao 
-                        $funcao->coletar($num1,$num2);
+                        $resultado = $funcao->imc($altura,$peso);
                     }
                 ?>
             </button>
             <h2>
                 <?php 
-                if(ifsset($_POST['primeiroNumero']) || isset($_POST['segundoNumero']))
+                if(isset($_POST['peso']) || isset($_POST['altura']))
                 {
-                echo $funcao->somar(); 
+                    echo $resultado; 
                 }
                 else
                 {

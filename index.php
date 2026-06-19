@@ -12,11 +12,14 @@
 </head>
 <body>
     <h1> Boas Vindas </h1>
-      <a href="telas/somar.php"  class="btn btn-primary">Somar</a>         <!-- botãos -->                    
-      <a href="telas/subtrair.php"  class="btn btn-primary">Subtrair</a>
-      <a href="telas/multiplicar.php"  class="btn btn-primary">Multiplicar</a>
-      <a href="telas/dividir.php"  class="btn btn-primary">Dividir</a>                         
-      <a href="telas/bascara.php"  class="btn btn-primary">Bascara</a> 
+      <a href="telas/somar.php"  class="btn btn-primary">Somar</a><br>         <!-- botãos -->                    
+      <a href="telas/subtrair.php"  class="btn btn-primary">Subtrair</a><br>
+      <a href="telas/multiplicar.php"  class="btn btn-primary">Multiplicar</a><br>
+      <a href="telas/dividir.php"  class="btn btn-primary">Dividir</a><br>                         
+      <a href="telas/bhaskara.php"  class="btn btn-primary">Bhaskara</a><br> 
+      <a href="telas/imc.php"  class="btn btn-primary">IMC</a><br> 
+      <a href="telas/areaDeRetangulo.php"  class="btn btn-primary">Área De Retângulo</a><br> 
+      <a href="telas/areaDetriangulo.php"  class="btn btn-primary">Área De Triângulo</a><br> 
 
 </body>
 </html>
