@@ -10,32 +10,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adicionar18%DeImposto</title>
+    <title>Ler Idade</title>
 </head>
 <body>
        <form method="POST" style="text-align:center;margin:10%; padding:5%; background-color:#bb0b0b;"> 
-            <h1>Adicionar 18% de Imposto </h1>  
+            <h1>Converter idade para dias </h1>  
 
                             <!-- area do texto -->
             <div class="mb-3">
-                <label for="lpreco" class="form-label">Informe o preço:</label>
-                <input type="number" class="form-control" id="preco" name="preco">
+                <label for="lidade" class="form-label">Informe sua idade:</label>
+                <input type="number" class="form-control" id="idade" name="idade">
             </div>
                             <!-- area do texto -->
                             <!-- botãos -->
-            <button type="submit" class="btn btn-primary">Calcular
+            <button type="submit" class="btn btn-primary">Converter
                 <?php 
-                    if(isset($_POST['preco']))
+                    if(isset($_POST['idade']))
                     {
-                        $preco = $_POST['preco'];
+                        $idade = $_POST['idade'];
                         //chamar variavel da classe funcao 
-                        $resultado = $funcao->adicionarImposto18($preco);
+                        $resultado = $funcao->lerIdade($idade);
                     }
                 ?>
             </button>
             <h2>
                 <?php 
-                if(isset($_POST['preco']))
+                if(isset($_POST['idade']))
                 {
                 echo $resultado; 
                 }

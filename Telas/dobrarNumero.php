@@ -10,32 +10,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adicionar18%DeImposto</title>
+    <title>Dobrar Número</title>
 </head>
 <body>
        <form method="POST" style="text-align:center;margin:10%; padding:5%; background-color:#bb0b0b;"> 
-            <h1>Adicionar 18% de Imposto </h1>  
+            <h1>Dobrar Número</h1>  
 
                             <!-- area do texto -->
             <div class="mb-3">
-                <label for="lpreco" class="form-label">Informe o preço:</label>
-                <input type="number" class="form-control" id="preco" name="preco">
+                <label for="lPrimeiroNumero" class="form-label">Informe o Número:</label>
+                <input type="number" class="form-control" id="primeiroNumero" name="primeiroNumero">
             </div>
                             <!-- area do texto -->
                             <!-- botãos -->
-            <button type="submit" class="btn btn-primary">Calcular
+            <button type="submit" class="btn btn-primary">Dobrar
                 <?php 
-                    if(isset($_POST['preco']))
+                    if(isset($_POST['primeiroNumero']))
                     {
-                        $preco = $_POST['preco'];
-                        //chamar variavel da classe funcao 
-                        $resultado = $funcao->adicionarImposto18($preco);
+                    $num1 = $_POST['primeiroNumero'];
+                    //chamar variavel da classe funcao 
+                     $resultado = $funcao->dobrarNumero($num1);
                     }
                 ?>
             </button>
             <h2>
-                <?php 
-                if(isset($_POST['preco']))
+                <?php
+                if(isset($_POST['primeiroNumero']))
                 {
                 echo $resultado; 
                 }

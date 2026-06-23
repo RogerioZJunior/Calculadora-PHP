@@ -20,6 +20,19 @@
       <a href="telas/imc.php"  class="btn btn-primary">IMC</a><br> 
       <a href="telas/areaDeRetangulo.php"  class="btn btn-primary">Área De Retângulo</a><br> 
       <a href="telas/areaDetriangulo.php"  class="btn btn-primary">Área De Triângulo</a><br> 
+      <a href="telas/imposto.php"  class="btn btn-primary">Imposto</a><br> 
+      <a href="telas/lerIdade.php"  class="btn btn-primary">Idade em dias</a><br> 
+      <a href="telas/somarDoisNumeros.php"  class="btn btn-primary">Somar Dois números</a><br> 
+      <a href="telas/dobrarNumero.php"  class="btn btn-primary">Dobrar Número</a><br> 
+      <a href="telas/media.php"  class="btn btn-primary">Calcular Média</a><br> 
+      <a href="telas/raizQuadrada.php"  class="btn btn-primary">Raiz Quadrada</a><br> 
+      <a href="telas/metrosParaCentimetros.php"  class="btn btn-primary">Converter metros para centimetros</a><br> 
+      <a href="telas/areaDeCirculo.php"  class="btn btn-primary">Área De Circulo</a><br> 
+      <a href="telas/temperatura.php"  class="btn btn-primary">Converter Celsius para Fharenheit</a><br>
+      <a href="telas/desconto.php"  class="btn btn-primary">Desconto de 10%</a><br>
+      <a href="telas/lerIdadeEmMesses.php"  class="btn btn-primary">Idade em Messes</a><br>
+      <a href="telas/numeroImparOuPar.php"  class="btn btn-primary">Número Ímpar ou par</a><br>
+  
 
 </body>
 </html>

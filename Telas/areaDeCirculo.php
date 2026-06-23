@@ -10,32 +10,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adicionar18%DeImposto</title>
+    <title>Área De Circulo</title>
 </head>
 <body>
        <form method="POST" style="text-align:center;margin:10%; padding:5%; background-color:#bb0b0b;"> 
-            <h1>Adicionar 18% de Imposto </h1>  
+            <h1>Calcular Área De Circulo</h1>  
 
                             <!-- area do texto -->
             <div class="mb-3">
-                <label for="lpreco" class="form-label">Informe o preço:</label>
-                <input type="number" class="form-control" id="preco" name="preco">
+                <label for="lRaio" class="form-label">Informe o Raio:</label>
+                <input type="number" class="form-control" id="raio" name="raio">
             </div>
+
                             <!-- area do texto -->
                             <!-- botãos -->
             <button type="submit" class="btn btn-primary">Calcular
                 <?php 
-                    if(isset($_POST['preco']))
+                    if(isset($_POST['raio']))
                     {
-                        $preco = $_POST['preco'];
+                        $raio = $_POST['raio'];
                         //chamar variavel da classe funcao 
-                        $resultado = $funcao->adicionarImposto18($preco);
+                      $resultado = $funcao->areaDeCirculo($raio);
                     }
                 ?>
             </button>
             <h2>
                 <?php 
-                if(isset($_POST['preco']))
+                if(isset($_POST['raio']))
                 {
                 echo $resultado; 
                 }

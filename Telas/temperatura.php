@@ -10,32 +10,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adicionar18%DeImposto</title>
+    <title>Converter Celsius para Fharenheit</title>
 </head>
 <body>
        <form method="POST" style="text-align:center;margin:10%; padding:5%; background-color:#bb0b0b;"> 
-            <h1>Adicionar 18% de Imposto </h1>  
+            <h1>Converter Celsius para Fharenheit</h1>  
 
                             <!-- area do texto -->
             <div class="mb-3">
-                <label for="lpreco" class="form-label">Informe o preço:</label>
-                <input type="number" class="form-control" id="preco" name="preco">
+                <label for="lCelsius" class="form-label">Informe a temperatura em Celsius:</label>
+                <input type="text" class="form-control" id="celsius" name="celsius">
             </div>
                             <!-- area do texto -->
                             <!-- botãos -->
-            <button type="submit" class="btn btn-primary">Calcular
+            <button type="submit" class="btn btn-primary">Converter
                 <?php 
-                    if(isset($_POST['preco']))
+                    if(isset($_POST['celsius']))
                     {
-                        $preco = $_POST['preco'];
-                        //chamar variavel da classe funcao 
-                        $resultado = $funcao->adicionarImposto18($preco);
+                    $num1 = (float)$_POST['celsius'];
+                    //chamar variavel da classe funcao 
+                     $resultado = $funcao->conveterTemperatura($num1);
                     }
                 ?>
             </button>
             <h2>
-                <?php 
-                if(isset($_POST['preco']))
+                <?php
+                if(isset($_POST['celsius']))
                 {
                 echo $resultado; 
                 }

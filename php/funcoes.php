@@ -96,19 +96,19 @@
                 {
                     return "Seu IMC é: $resultado você está Abaixo do Peso";
                 }
-                else if($this->resultado >= 18.6)
+                else if($resultado >= 18.6 && $resultado <24.9)
                 {
                     return "Seu IMC é: $resultado você está com o Peso Ideal";
                 }
-                else if($resultado >= 25)
+                else if($resultado >= 25 && $resultado <29.9)
                 {
                     return "Seu IMC é: $resultado você está com Sobrepeso";
                 }
-                else if($resultado >= 30)
+                else if($resultado >= 30  && $resultado <34.9)
                 {
                     return "Seu IMC é: $resultado você está com Obesidade";
                 }
-                else if($resultado >= 35 || $resultado < 40)
+                else if($resultado >= 35 && $resultado < 40)
                 {
                     return "Seu IMC é: $resultado você está com Obesidade Severa";
                 }
@@ -155,15 +155,125 @@
 
             }else
             {
-                $resultado = $preco * 0.18;
+                $imposto = $preco * 0.18;
+                $resultado = $imposto + $preco;
                 return "O preço a pós 18% de imposto é: $resultado ";
             }
         }//fim do imposto
 
 
+            public function lerIdade(int $idade)
+        {
+            $resultado = $idade * 365.3; 
+            return "Sua idade em dias é: $resultado ";
+        }//fim do ler idade
 
 
+        // 1. Leia dois números e exiba a soma. 
+          public function somarDoisNumeros(float $num1, float $num2)
+        {
+                $resultado = $num1 + $num2;
+                return "A soma é: $resultado "; 
+        }//fim do somar dois números
 
+        // 2. Leia um número e exiba o dobro.
+           public function dobrarNumero(float $num1)
+        {
+                $resultado = $num1 * 2;
+                return "O resultado é: $resultado "; 
+        }//fim do Dobrar número
+
+        //3. Calcule a média entre três números.     
+           public function media(float $num1,float $num2,float $num3)
+        {
+                $soma = $num1 + $num2 + $num3; 
+                $resultado = $soma / 3; 
+                return "O resultado é: $resultado "; 
+        }//fim do calcular média
+
+        // 4. Leia um número e exiba sua raiz quadrada.
+           public function raizQuadrada(float $num1)
+        {
+             $resultado = sqrt($num1);  
+             return "O resultado é: $resultado "; 
+        }//fim do raiz quadrada
+
+        // 5. Leia um valor em metros e converta para centímetros.
+         public function metrosParaCentimetros(float $num1)
+        {
+            if($num1 <= 0)
+            {
+                return "impossível calcular por zero!";
+            }
+            else
+            {
+                $resultado = $num1 * 100;
+                return "O resultado é: $resultado ";
+            }
+        }//fim do metros para centimetros
+
+        // 6. Calcule a área de um círculo com base no raio.
+          public function areaDeCirculo(float $raio)
+        {
+            if($raio <= 0)
+            {
+                return "impossível calcular por zero!";
+
+            }else
+            {
+                $resultado = $raio^2 * 3.14;
+                return "A Área do Circulo é: $resultado ";
+            }
+        }//fim do circulo
+
+        // 7. Converta temperatura de Celsius para Fahrenheit. 
+         public function conveterTemperatura(float $num1)
+        {
+                $resultado = $num1 * 1.8 + 32; 
+                return "A temperatura em Fharenheit é: $resultado ";
+        }//fim do temperatura
+
+        // 8. Calcule o valor de um produto com 10% de desconto. 
+             public function desconto(float $preco)
+        {
+            if($preco <= 0)
+            {
+                return "impossível calcular por zero!";
+
+            }else
+            {
+                $resultado = $preco * 0.90;
+                return "O preço a pós 10% de desconto é: $resultado ";
+            }
+        }//fim do desconto
+
+        // 9. Leia a idade de uma pessoa em anos e exiba em meses. 
+            public function lerIdadeEmMesses(int $idade)
+        {
+            if($idade <= 0)
+            {
+                return "impossível calcular por zero!";
+            }
+            else
+            {
+                $resultado = $idade * 12;  
+                return "Sua idade em messes é: $resultado ";
+            }
+        }//fim do ler idade em messes
+
+        //10. Leia um número e exiba se ele é par ou ímpar (sem usar if). 
+           public function numeroImparOuPar(int $num1)
+           {
+                if($num1 %2 == 0)
+                {
+                    return "O Número $num1 é Par ";
+                }
+                else
+                {
+                    return "O Número $num1 é Ímpar ";
+                }
+           }//fim do numero impar e par
+        
         
     }//fim da classe função
 ?> <!-- fechamento da tag do php -->
