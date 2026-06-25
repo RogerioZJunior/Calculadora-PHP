@@ -32,7 +32,9 @@
       <a href="telas/desconto.php"  class="btn btn-primary">Desconto de 10%</a><br>
       <a href="telas/lerIdadeEmMesses.php"  class="btn btn-primary">Idade em Messes</a><br>
       <a href="telas/numeroImparOuPar.php"  class="btn btn-primary">Número Ímpar ou par</a><br>
-  
+      <a href="telas/quadradoECubo.php"  class="btn btn-primary">Número ao Quadrado e ao Cubo</a><br>
+      <a href="telas/horasTrabalhadas.php"  class="btn btn-primary">Calcular sálario por horas trabalhadas</a><br>  
+      <a href="telas/tempoDeVida.php"  class="btn btn-primary">Tempo de vida</a><br>  
 
 </body>
 </html>

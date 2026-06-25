@@ -273,6 +273,36 @@
                     return "O Número $num1 é Ímpar ";
                 }
            }//fim do numero impar e par
+
+           //13. Receba um número e calcule seu quadrado e cubo.
+           public function aoQuadroECubo(float $num1)
+           {
+                return "O Resultado do quadrado é : ".pow($num1,2).", e o cubo é: ".pow($num1,3);
+           }//fim do numero Quadrado e Cubo
+
+           //17. Calcule o salário mensal a partir do valor da hora e horas trabalhadas.
+           public function horasTrabalhadas(int $horas, int $valorHora)
+           {
+                if($horas == 0 || $valorHora == 0)
+                {
+                    return "Imposível calcular por zero ";
+                }
+                else
+                {
+                    $resultado = $horas * $valorHora; 
+                    return "O salário é : $resultado ";
+                }            
+           }//fim do salario 
+
+           //19. Calcule o tempo restante de vida até 100 anos.
+            public function tempoDeVida(int $idade)
+           {
+                $resultado = $idade - 100; 
+                 return "O seu tempo restante de vida até 100 anos é : $resultado ";    
+           }//fim do tempo de vida 
+
+
+
         
         
     }//fim da classe função
